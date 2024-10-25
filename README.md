@@ -9,12 +9,10 @@ of clients are agreeing on using the same server.
 
 The command line options are:
 
-	usage: dht-bootstrap <external-IP> [options]
+	usage: jbootstrap-dht <external-IP> [options]
 
 	OPTIONS:
 	--help                prints this message.
-	--threads <n>         spawns <n> threads (defaults to the
-	                      number of hardware cores).
 	--nodes <n>           sets the number of nodes to keep in
 	                      the node buffer. Once full, the oldest
 	                      nodes are replaced as new nodes come in.
@@ -40,9 +38,6 @@ The command line options are:
 The first argument when launching the server is its own IP. This is not
 only relevant for binding the socket to this interface but is also used when
 generating its own DHT node ID.
-
-The number of threads defaults to the number of CPU cores but can be
-overridden by the `--threads` argument.
 
 The number of DHT nodes to keep in the cache of nodes to hand out defaults
 to 10000000 and can be overridden by `--nodes`. It may not be lower than
