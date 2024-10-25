@@ -68,8 +68,6 @@ handed out once every (10000000 / 16 / 20000 ~=) 31 seconds.
 Only nodes whose node ID match their external IP address (according to this_)
 are pinged.
 
-.. _this: http://libtorrent.org/dht_sec.html
-
 `jbootstrap-dht` listens on port 6881 by default. You may specify a different
 port using the `--port` command line option.
 
