@@ -7,6 +7,8 @@ DHT network. Like the ones running at `router.octorrent.com`.
 OcTorrent clients can use this server to join the DHT, assuming some number
 of clients are agreeing on using the same server.
 
+If you want to use the [Rust](https://github.com/octorrent/rbittorrent-dht) version.
+
 The command line options are:
 
 	usage: jbootstrap-dht <external-IP> [options]
