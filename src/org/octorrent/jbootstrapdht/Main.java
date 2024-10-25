@@ -8,7 +8,6 @@ import java.net.UnknownHostException;
 
 public class Main {
 
-
     public static void main(String[] args)throws SocketException, UnknownHostException {
         Kademlia dht = new Kademlia();
 
