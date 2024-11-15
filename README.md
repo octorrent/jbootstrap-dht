@@ -1,13 +1,13 @@
 jbootstrap-dht
 =============
 
-The DHT bootstrap server can be used as an introducer to the octorrent
-DHT network. Like the ones running at `router.octorrent.com`.
+The DHT bootstrap server can be used as an introducer to the sectorrent
+DHT network. Like the ones running at `router.sectorrent.com`.
 
-OcTorrent clients can use this server to join the DHT, assuming some number
+SecTorrent clients can use this server to join the DHT, assuming some number
 of clients are agreeing on using the same server.
 
-If you want to use the [Rust](https://github.com/octorrent/rbittorrent-dht) version.
+If you want to use the [Rust](https://github.com/sectorrent/rbittorrent-dht) version.
 
 The command line options are:
 
@@ -52,13 +52,13 @@ in the ping buffer, the rate of pinging is throttled to match.
 
 For example, the default of 5000000 nodes in the ping buffer restricts the
 ping rate to (5000000 / 900 = ) 5555 pings per second. Experience from
-`router.octorrent.com` suggests that about 45% of pings succeeds and end
+`router.sectorrent.com` suggests that about 45% of pings succeeds and end
 up being added to the node buffer. At the default rate, that means the
 entire node buffer is replaced every 66 minutes. i.e. once you're in the
 node buffer, you'll be handed out to nodes for abut 66 minutes before you
 are replaced by someone else.
 
-The current rate at `router.octorrent.com` is about 20000 requests per second.
+The current rate at `router.sectorrent.com` is about 20000 requests per second.
 Every request returns 16 nodes. That means every node in the node buffer is
 handed out once every (10000000 / 16 / 20000 ~=) 31 seconds.
 
