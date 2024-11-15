@@ -1,6 +1,6 @@
-package org.octorrent.jbootstrapdht;
+package org.sectorrent.jbootstrapdht;
 
-import org.octorrent.jlibdht.Kademlia;
+import org.sectorrent.jlibdht.Kademlia;
 
 import java.net.InetAddress;
 import java.net.SocketException;
